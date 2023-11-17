@@ -1,0 +1,44 @@
+<!-- res/layout/activity_citizen_dashboard.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Buttons for navigation -->
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/tableButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Table"
+        android:layout_below="@id/mapButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/reportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        android:layout_below="@id/tableButton"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Fragment container -->
+
+    <!-- Add your dashboard UI elements here -->
+<!-- Example: TextViews, Buttons, etc. -->
+
+<FrameLayout
+    android:id="@+id/fragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/topBar"/>
+
+</RelativeLayout>

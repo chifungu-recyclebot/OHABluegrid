@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Add your menu items for Waste Manager Dashboard -->
+    <item
+        android:id="@+id/menu_item3"
+        android:title="@string/menu_item3"
+        android:icon="@drawable/ic_menu_item3"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_item4"
+        android:title="@string/menu_item4"
+        android:icon="@drawable/ic_menu_item4"
+        app:showAsAction="ifRoom" />
+
+    <!-- Add more items as needed -->
+
+</menu>

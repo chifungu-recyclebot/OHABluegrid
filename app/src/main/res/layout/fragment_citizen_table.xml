@@ -1,0 +1,19 @@
+<!-- res/layout/fragment_citizen_table.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Add your table-related UI elements here -->
+
+    <!-- Placeholder for a button to navigate to the map fragment -->
+    <Button
+        android:id="@+id/navigateToMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigate to Map"/>
+
+    <!-- Example: RecyclerView for displaying table data -->
+
+</RelativeLayout>

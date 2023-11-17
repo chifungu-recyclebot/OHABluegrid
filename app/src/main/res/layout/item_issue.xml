@@ -1,0 +1,42 @@
+<!-- item_issue.xml -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="issue"
+            type="data.model.ReportedIssue" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Add your UI components here -->
+        <!-- For example, TextViews for issue title and description -->
+
+        <TextView
+            android:id="@+id/issueTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{issue.title}"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/issueDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{issue.description}"
+            android:textSize="16sp"/>
+
+        <!-- Add more views based on your data model -->
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371817922690",
+    "project_id": "ohabluegrid",
+    "storage_bucket": "ohabluegrid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371817922690:android:b338247f05d31e1277f49b",
+        "android_client_info": {
+          "package_name": "com.greenway.ohabluegrid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKPLFcMHdcsme5_TjMGlMImjNOh9viLAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

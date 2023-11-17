@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.greenway.ohabluegrid">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+
+    <!-- Application class for Amplify initialization -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.OHABluegrid"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".authentication.AuthActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".dashboard.admin.AdminUserManagementActivity">
+            <!-- Other activity attributes -->
+        </activity>
+
+        <activity
+            android:name=".dashboard.citizen.CitizenDashboardActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".dashboard.citizen.CitizenMapFragment"
+            android:exported="false" />
+
+        <activity
+            android:name=".dashboard.citizen.CitizenTableFragment"
+            android:exported="false" />
+
+        <activity
+            android:name=".dashboard.citizen.CitizenReportFragment"
+            android:exported="false" />
+
+        <!-- Add other activities as needed -->
+
+    </application>
+</manifest>
